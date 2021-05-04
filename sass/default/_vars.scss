@@ -1,0 +1,17 @@
+$linkHover: #2d7eb9;
+$yellow: #fbd341;
+$footer: #22334d;
+
+@mixin btnOffer {
+    padding: 17px 30px;
+    background-color: $yellow;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    @include ArialBold;
+    &:active {
+        box-shadow: 10px 11px 10px 8px rgba(0, 0, 0, 0.2);
+    }
+}

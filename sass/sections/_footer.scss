@@ -1,0 +1,127 @@
+.footer {
+    background-color: $footer;
+    padding-top: 50px;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        color: #ffffff;
+        font-size: 14px;
+    }
+    &__logo {
+        &-img {
+            margin-bottom: 28px;
+        }
+        &-line {
+            display: block;
+            width: 290px;
+            height: 1px;
+            background-color: #38475f;
+        }
+        &-text {
+            margin: 28px 0;
+        }
+        &-create {
+            margin-top: 20px;
+            margin-bottom: 28px;
+        }
+    }
+    &__navigation {
+        &-nav {
+            font-size: 18px;
+            font-weight: 700;
+            @include ArialBold;
+            margin-bottom: 40px;
+        }
+        ul {
+            li {
+                margin-bottom: 20px;
+                a {
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+    &__support {
+        &-nav {
+            font-size: 18px;
+            font-weight: 700;
+            @include ArialBold;
+            margin-bottom: 40px;
+        }
+        ul {
+            li {
+                margin-bottom: 20px;
+                a {
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+    &__contacts {
+        &-nav {
+            font-size: 18px;
+            font-weight: 700;
+            @include ArialBold;
+            margin-bottom: 40px;
+        }
+        &-address {
+            margin-bottom: 20px;
+            position: relative;
+            a {
+                margin-left: 20px;
+            }
+            &::before {
+                content: url('../img/ico-here.png');
+                position: absolute;
+                left: 0px;
+            }
+            &:hover {
+                color: $yellow;
+            }
+        }
+        &-phone {
+            margin-bottom: 20px;
+            position: relative;
+            a {
+                margin-left: 21px;
+            }
+            &::before {
+                content: url('../img/ico-phone.png');
+                position: absolute;
+                left: 0px;
+            }
+            &:hover {
+                color: $yellow;
+            }
+        }
+        &-line {
+            display: block;
+            width: 220px;
+            height: 1px;
+            background-color: #38475f;
+        }
+        &-icons {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            &__fb {
+                margin-right: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        &__logo {
+            &-line {
+                width: 240px;
+            }
+        }
+    }
+}
